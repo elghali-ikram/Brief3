@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+h2
+{
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Roboto Slab';
+  
+}
+h3 , h4
+{
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+p
+{
+  font-size: 1rem;
+  font-family: 'Roboto';
+}
+hr {
+  width: 150px;
+  border: 3px solid #F6CB32;
+  border-radius: 30%;
+}
+/*header*/
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header 
+{
+  background: rgba(120, 118, 118, 0.377)url("photo/bg-header.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  gap: 70px;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  padding: 0% 8%;
+  color:white;
+}
+header h2
+{
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Roboto Slab';
+  margin: 0;
+}
+header a {
+  background-color: #32aad6;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+}
+header a:hover {
+  background-color: #F6CB32;
+  border: none;
+}
+/* activities */
+.container {
+  text-align: center;
+  margin-top: 5%;
+}
+.activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 5%;
+  gap: 20px;
+}
+.activities div {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 60px;
+}
+.activities div:first-child {
+  background-image: url('photo/camping.jpeg');
+  background-size: cover;
+}
+.activities div:hover {
+  filter: grayscale(30%);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.activities div:nth-child(2) {
+  background-image: url('photo/hiking.jpeg');
+  background-size: cover;
+}
+.activities div:nth-child(3) {
+  background-image: url('photo/para.jpeg');
+  background-size: cover;
+}
+.activities div:nth-child(4) {
+  background-image: url('photo/skiing.jpeg');
+  background-size: cover;
+
+}
+.activities div:nth-child(5) {
+  background-image: url('photo/climbing.jpeg');
+  background-size: cover;
+
+}
+.activities div:nth-child(6) {
+  background-image: url('photo/rafting.jpeg');
+  background-size: cover;
+}
+.activities p
+{
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: white;
+}
+/* SERVICE */
+.service {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 10%;
+}
+.services {
+  background-image: url('photo/bg8.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.service i {
+  padding: 10%;
+  border: 5px solid rgba(0, 0, 0, 0.402);
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #32aad6;
+}
+.service i:hover {
+  color: #F6CB32;
+}
+/* DEALS */
+.deals {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 5%;
+}
+.deals img {
+  width: 100%;
+  height: 500px;
+}
+.deal {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 20%;
+  background: red;
+  color: #fff;
+  padding: 10px;
+  width: 20%;
+  border-radius: 10%;
+
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  background: #151d2a5e;
+  color: #f1f1f1;
+  width: 100%;
+}
+.bottom p
+{
+  margin: 20px;
+
+}
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.deal:hover img {
+  opacity: 0.3;
+}
+.deal:hover .overlay {
+  opacity: 1;
+}
+.overlay p:hover {
+  background-color: #F6CB32;
+}
+.overlay p {
+  background-color: #32aad6;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+/* review */
+.review {
+  background: rgba(0, 0, 0, 0.549)url("photo/bg-subscribe.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 10%;
+  color: #f1f1f1;
+}
+.back-revi {
+  background-color: #32aad643;
+  padding: 10px;
+  border-radius: 10px;
+}
+.customer {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.customers {
+  background-color: #32aad6;
+  padding: 10px;
+  border-radius: 10%;
+}
+.head-cust div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.head-cust {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #f1f1f19a;
+}
+.customers:first-child .head-cust div {
+  background-image: url('photo/yasmine.png');
+  background-size: cover;
+}
+.customers:nth-child(2) .head-cust div {
+  background-image: url('photo/fati.png');
+  background-size: cover;
+}
+.customers:nth-child(3) .head-cust div {
+  background-image: url('photo/safae.png');
+  background-size: cover;
+}
+/* footer */
+footer {
+  background-color: #151d2a;
+  margin: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+footer p {
+  padding: 20px;
+}
+.logo img {
+  width: 150px;
+  height: 150px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+section p {
+  margin: 20px;
+}
+p {
+  margin: 0;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.icons i {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  color: #f1f1f1;
+  margin: 10px;
+}
+.icons i:hover {
+  background-color: #F6CB32;
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .activities , .service , .deals , .customer {
+    flex-wrap: wrap;
+  }
+  .activities div {
+    width: 100px;
+    height: 100px;
+    text-align: center  ;
+
+  }
+  .head-cust div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .activities p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .deals img {
+    width: 100%;
+    height: 400px;
+  }
+ 
+  .top {
+    padding: 5px;
+  }
+  header a {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  header h2
+  {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+ 
+  html{
+    font-size: 10px;
+  }
+  .service i {
+    padding: 5%;
+  }
+}
